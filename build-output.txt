@@ -1,0 +1,211 @@
+make static_lib
+cd ext/picotcp; make lib ARCH=shared IPV4=1 IPV6=1
+make[1]: Entering directory '/home/orangepi/libzt/ext/picotcp'
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_strings.o modules/pico_strings.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_tftp.o modules/pico_tftp.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_aodv.o modules/pico_aodv.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_arp.o modules/pico_arp.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_ethernet.o modules/pico_ethernet.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_ipv4.o modules/pico_ipv4.c
+In file included from modules/pico_ipv4.c:28:0:
+modules/../../../include/Debug.hpp:155:96: warning: backslash and newline separated by space
+   #define DEBUG_FLOW(fmt, args...) ((void)__android_log_print(ANDROID_LOG_VERBOSE, ZT_LOG_TAG, \
+ ^
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_fragments.o modules/pico_fragments.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_icmp4.o modules/pico_icmp4.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_tcp.o modules/pico_tcp.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_socket_tcp.o modules/pico_socket_tcp.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_udp.o modules/pico_udp.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_socket_udp.o modules/pico_socket_udp.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_mcast.o modules/pico_mcast.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_igmp.o modules/pico_igmp.c
+modules/pico_igmp.c: In function ‘pico_igmpv3_generate_report’:
+modules/pico_igmp.c:751:33: warning: cast increases required alignment of target type [-Wcast-align]
+         uint32_t *source_addr = (uint32_t *)((uint8_t *)record + sizeof(struct igmpv3_group_record));
+                                 ^
+modules/pico_igmp.c: In function ‘pico_igmp_generate_report’:
+modules/pico_igmp.c:796:19: warning: cast increases required alignment of target type [-Wcast-align]
+     filter.link = (union pico_link *)pico_ipv4_link_get((struct pico_ip4 *) &p->mcast_link);
+                   ^
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_mld.o modules/pico_mld.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_nat.o modules/pico_nat.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_dev_loop.o modules/pico_dev_loop.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_dhcp_client.o modules/pico_dhcp_client.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_dhcp_common.o modules/pico_dhcp_common.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_dhcp_server.o modules/pico_dhcp_server.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_dns_client.o modules/pico_dns_client.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_dns_common.o modules/pico_dns_common.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_mdns.o modules/pico_mdns.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_dns_sd.o modules/pico_dns_sd.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_ipfilter.o modules/pico_ipfilter.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_slaacv4.o modules/pico_slaacv4.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_hotplug_detection.o modules/pico_hotplug_detection.c
+modules/pico_hotplug_detection.c: In function ‘pico_hotplug_register’:
+modules/pico_hotplug_detection.c:173:33: warning: cast increases required alignment of target type [-Wcast-align]
+         pico_hotplug_deregister((struct pico_device *)hotplug_dev, cb);
+                                 ^
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_ipv6.o modules/pico_ipv6.c
+In file included from modules/pico_ipv6.c:26:0:
+modules/../../../include/Debug.hpp:155:96: warning: backslash and newline separated by space
+   #define DEBUG_FLOW(fmt, args...) ((void)__android_log_print(ANDROID_LOG_VERBOSE, ZT_LOG_TAG, \
+ ^
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_ipv6_nd.o modules/pico_ipv6_nd.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_icmp6.o modules/pico_icmp6.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_sntp_client.o modules/pico_sntp_client.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o modules/pico_dev_ppp.o modules/pico_dev_ppp.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o stack/pico_stack.o stack/pico_stack.c
+In file included from stack/pico_stack.c:36:0:
+stack/../../../include/Debug.hpp:155:96: warning: backslash and newline separated by space
+   #define DEBUG_FLOW(fmt, args...) ((void)__android_log_print(ANDROID_LOG_VERBOSE, ZT_LOG_TAG, \
+ ^
+stack/pico_stack.c:595:12: warning: no previous prototype for ‘pico_ntimers’ [-Wmissing-prototypes]
+ extern int pico_ntimers()
+            ^
+stack/pico_stack.c: In function ‘pico_ntimers’:
+stack/pico_stack.c:597:5: warning: conversion to ‘int’ from ‘uint32_t’ may change the sign of the result [-Wsign-conversion]
+     return Timers->n;
+     ^
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o stack/pico_frame.o stack/pico_frame.c
+stack/pico_frame.c: In function ‘pico_frame_do_alloc’:
+stack/pico_frame.c:93:26: warning: cast increases required alignment of target type [-Wcast-align]
+         p->usage_count = (uint32_t *)(((uint8_t*)p->buffer) + frame_buffer_size);
+                          ^
+stack/pico_frame.c: In function ‘pico_frame_new_buffer’:
+stack/pico_frame.c:159:22: warning: cast increases required alignment of target type [-Wcast-align]
+     f->usage_count = (uint32_t *)(((uint8_t*)f->buffer) + frame_buffer_size);
+                      ^
+stack/pico_frame.c: In function ‘pico_checksum_adder’:
+stack/pico_frame.c:293:12: warning: cast increases required alignment of target type [-Wcast-align]
+     stop = (uint16_t *)(((uint8_t *)data) + len);
+            ^
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o stack/pico_device.o stack/pico_device.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o stack/pico_protocol.o stack/pico_protocol.c
+In file included from stack/pico_protocol.c:13:0:
+stack/../../../include/Debug.hpp:155:96: warning: backslash and newline separated by space
+   #define DEBUG_FLOW(fmt, args...) ((void)__android_log_print(ANDROID_LOG_VERBOSE, ZT_LOG_TAG, \
+ ^
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o stack/pico_socket.o stack/pico_socket.c
+In file included from stack/pico_socket.c:26:0:
+stack/../../../include/Debug.hpp:155:96: warning: backslash and newline separated by space
+   #define DEBUG_FLOW(fmt, args...) ((void)__android_log_print(ANDROID_LOG_VERBOSE, ZT_LOG_TAG, \
+ ^
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o stack/pico_socket_multicast.o stack/pico_socket_multicast.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o stack/pico_tree.o stack/pico_tree.c
+gcc -c -I/home/orangepi/libzt/ext/picotcp/build/include -Iinclude -Imodules  -DPICO_COMPILE_TIME=`date +%s`  -Wall -W -Wextra -Wshadow -Wcast-qual -Wwrite-strings -Wundef -Wdeclaration-after-statement -Wconversion -Wcast-align -Wmissing-prototypes -Wno-missing-field-initializers -ggdb -fPIC -o stack/pico_md5.o stack/pico_md5.c
+-e      [AR] /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a
+-e      [RANLIB] /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a
+-e      [KEEP SYMBOLS] /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a
+-e      [LIBSIZE] 1031890       /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a
+-e    text         data     bss     dec     hex filename
+   4612      40     144    4796    12bc pico_aodv.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2928      12      36    2976     ba0 pico_arp.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+    372       0    1504    1876     754 pico_dev_loop.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+  10404    4492    3588   18484    4834 pico_dev_ppp.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   5820     232     132    6184    1828 pico_dhcp_client.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+    844       0       0     844     34c pico_dhcp_common.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2992      16       0    3008     bc0 pico_dhcp_server.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   5200      16    1500    6716    1a3c pico_dns_client.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   8444      16       0    8460    210c pico_dns_common.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2628       8       0    2636     a4c pico_dns_sd.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2320      56      56    2432     980 pico_ethernet.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2476      16      16    2508     9cc pico_fragments.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   1340       8       4    1352     548 pico_hotplug_detection.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2656      72      60    2788     ae4 pico_icmp4.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   5476      66      56    5598    15de pico_icmp6.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   7176     160      56    7392    1ce0 pico_igmp.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2212      24       0    2236     8bc pico_ipfilter.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+  10220      96      76   10392    2898 pico_ipv4.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+  14824      80      60   14964    3a74 pico_ipv6.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   6932      12      16    6960    1b30 pico_ipv6_nd.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   1656      16       0    1672     688 pico_mcast.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+  17916      52      24   17992    4648 pico_mdns.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   7520     104       1    7625    1dc9 pico_mld.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   3128      16       4    3148     c4c pico_nat.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   1848       0      24    1872     750 pico_slaacv4.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2936       2      40    2978     ba2 pico_sntp_client.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   1772       0       0    1772     6ec pico_socket_tcp.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   1416       0       0    1416     588 pico_socket_udp.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+    544       0       0     544     220 pico_strings.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+  21276     440      60   21776    5510 pico_tcp.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   8504     160     528    9192    23e8 pico_tftp.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   1396      56      56    1508     5e4 pico_udp.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2748       8       8    2764     acc pico_device.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   1724       0       0    1724     6bc pico_frame.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+     84       0       4      88      58 pico_md5.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   1548      80       0    1628     65c pico_protocol.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+  12680      28      16   12724    31b4 pico_socket.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   9136     112       0    9248    2420 pico_socket_multicast.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   6748      44     276    7068    1b9c pico_stack.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+   2804      20       0    2824     b08 pico_tree.o (ex /home/orangepi/libzt/ext/picotcp/build/lib/libpicotcp.a)
+ 207260    6560    8345  222165   363d5 (TOTALS)
+make[1]: Leaving directory '/home/orangepi/libzt/ext/picotcp'
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/C25519.cpp -o obj/C25519.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Capability.cpp -o obj/Capability.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/CertificateOfMembership.cpp -o obj/CertificateOfMembership.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/CertificateOfOwnership.cpp -o obj/CertificateOfOwnership.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Identity.cpp -o obj/Identity.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/IncomingPacket.cpp -o obj/IncomingPacket.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/InetAddress.cpp -o obj/InetAddress.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Membership.cpp -o obj/Membership.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Multicaster.cpp -o obj/Multicaster.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Network.cpp -o obj/Network.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/NetworkConfig.cpp -o obj/NetworkConfig.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Node.cpp -o obj/Node.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/OutboundMulticast.cpp -o obj/OutboundMulticast.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Packet.cpp -o obj/Packet.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Path.cpp -o obj/Path.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Peer.cpp -o obj/Peer.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Poly1305.cpp -o obj/Poly1305.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Revocation.cpp -o obj/Revocation.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Salsa20.cpp -o obj/Salsa20.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/SelfAwareness.cpp -o obj/SelfAwareness.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/SHA512.cpp -o obj/SHA512.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Switch.cpp -o obj/Switch.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Tag.cpp -o obj/Tag.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Topology.cpp -o obj/Topology.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Trace.cpp -o obj/Trace.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/node/Utils.cpp -o obj/Utils.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/controller/EmbeddedNetworkController.cpp -o obj/EmbeddedNetworkController.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/controller/JSONDB.cpp -o obj/JSONDB.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/osdep/ManagedRoute.cpp -o obj/ManagedRoute.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/osdep/Http.cpp -o obj/Http.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/osdep/OSUtils.cpp -o obj/OSUtils.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/service/SoftwareUpdater.cpp -o obj/SoftwareUpdater.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO -c zto/service/OneService.cpp -o obj/OneService.o
+clang -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -c zto/ext/http-parser/http_parser.c -o obj/http_parser.o
+clang++ -Ofast -g -fstack-protector -Wall -fPIE -fvisibility=hidden -pthread -Iext -Izto/osdep -Izto/node -Izto/service -Izto/include -Izto/controller -I../zto/osdep -I../zto/node -I../zto/service -I. -Isrc -Iinclude  -Iext/picotcp/include -Iext/picotcp/build/include  -Wno-format -fno-rtti -std=c++11 -DZT_SOFTWARE_UPDATE_DEFAULT="\"disable\"" -DZT_SDK -DLIBZT_IPV4 -DLIBZT_IPV6 -DSTACK_PICO src/VirtualTap.cpp src/libzt.cpp src/Utilities.cpp src/picoTCP.cpp -c
+src/VirtualTap.cpp:65:13: warning: unused variable 'picodev_initialized'
+      [-Wunused-variable]
+static bool picodev_initialized;
+            ^
+1 warning generated.
+src/libzt.cpp:665:7: warning: unused variable 'buf3' [-Wunused-variable]
+        char buf3[64];
+             ^
+src/libzt.cpp:1504:13: warning: unused variable 'err' [-Wunused-variable]
+        int r = 0, err = errno = 0;
+                   ^
+src/libzt.cpp:1652:77: warning: '/*' within block comment [-Wcomment]
+  ...API (Java Native Interface JNI)                               /* JNI nam...
+                                                                   ^
+src/libzt.cpp:2028:30: warning: unused variable 'ipbuf3' [-Wunused-variable]
+        char ipbuf[64], ipbuf2[64], ipbuf3[64];
+                                    ^
+src/libzt.cpp:2028:18: warning: unused variable 'ipbuf2' [-Wunused-variable]
+        char ipbuf[64], ipbuf2[64], ipbuf3[64];
+                        ^
+src/libzt.cpp:2028:7: warning: unused variable 'ipbuf' [-Wunused-variable]
+        char ipbuf[64], ipbuf2[64], ipbuf3[64];
+             ^
+6 warnings generated.
+mv *.o obj
+mv ext/picotcp/build/lib/*.o obj
+mv ext/picotcp/build/modules/*.o obj
+ar rcs -o build/linux/libzt.a obj/*.o ext/picotcp/build/lib/libpicotcp.a
+orangepi@OrangePI:~/libzt$ make tests
+[OK  ] build/linux/server
+[OK  ] build/linux/selftest
+[OK  ] build/linux/client
+[OK  ] build/linux/echotest
+[OK  ] build/linux/layer2
+orangepi@OrangePI:~/libzt$

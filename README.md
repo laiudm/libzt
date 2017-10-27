@@ -1,6 +1,11 @@
 # libzt
 *Embed ZeroTier directly into your app*
+
+My local copy, with original repository [here](https://github.com/zerotier/libzt.git)
+
 ***
+
+
 
 <a href="https://www.zerotier.com/?pk_campaign=github_libzt"><img src="https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/artwork/ZeroTierIcon.png" width="128" height="128" align="left" hspace="20" vspace="9"></a>
 
